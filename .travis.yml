@@ -5,10 +5,10 @@ mono: none
 dotnet: 3.1.1
 branches:
     only: 
-        -master
+        - master
         - /.*/
 before_script:
-    -chmod _R a+x scripts
+    - chmod _R a+x scripts
 script:
     - ./scripts/travis-build.sh
 after_success:
