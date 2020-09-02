@@ -8,7 +8,7 @@ branches:
         - master
         - /.*/
 before_script:
-    - chmod _R a+x scripts
+    - chmod -R a+x scripts
 script:
     - ./scripts/travis-build.sh
 after_success:
